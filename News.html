@@ -1,0 +1,55 @@
+---
+layout: default
+title: News
+slug: /News
+---
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: rgba(255, 255, 255, 0.486);}
+#customers tr:nth-child(odd){background-color: rgba(255, 255, 255, 0.719);}
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1ca5f5b6;
+  color: white;
+}
+</style>
+</head>
+<body>
+<table id="customers">
+  <tr>
+    <th>Date</th>
+    <th>News Title</th>
+  </tr>
+  {% for newspiece in site.news %}
+  <tr>
+    <td><p><strong>{{ newspiece.newsday }}</strong></p></td>
+    <td>
+      <a href="{{ newspiece.url }}">
+      <p><strong>{{ newspiece.title }}</strong></p>
+      </a>
+    </td>
+  </tr>
+{% endfor %}
+</table>
+</body>
+</html>
+
+
+

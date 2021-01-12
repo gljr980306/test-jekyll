@@ -1,0 +1,17 @@
+---
+layout: default
+title: Big Fellas(mammals)
+---
+ 
+    {% for mammal in site.data.mammals %} 
+     <p><strong>Name:</strong>  {{ mammal.name }}({{ mammal.Scientific_name }})</p>
+     <p><strong>Depth:</strong>  {{ mammal.depth }}</p>
+     <p><strong>Appearance:</strong>  {{ mammal.appearance }}</p>
+     <p><strong>Lifestyle:</strong>  {{ mammal.lifestyle }}</p>
+     {% assign num = 2 %}
+     {% for i in (1..num) %}
+     <img src="../assets/img/mammals/{{ mammal.name }}{{ i }}.jpg" width="300px" height="300px">
+     
+     
+     {% endfor %} 
+    {% endfor %} 

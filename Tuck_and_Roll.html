@@ -1,0 +1,18 @@
+---
+layout: default
+title: Tuck and Roll(shells)
+---
+
+{% for shell in site.data.shells %} 
+     <p><strong>Name:</strong>  {{ shell.Name }}</p>
+     <p><strong>Scientific Name:</strong>  {{ shell.Scientific_Name }}</p>
+     <p><strong>Family:</strong>  {{ shell.Family }}</p>
+     <p><strong>Distribution:</strong>  {{ shell.Distribution }}</p>
+     <p><strong>Brief Introduction:</strong>  {{ shell.Brief_Introduction }}</p>
+
+     <img src="../assets/img/shells/{{ shell.Name }}.png" width="640px" height="400px">
+<br />
+<br />
+<br />
+<br />
+    {% endfor %} 

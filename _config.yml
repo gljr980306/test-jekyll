@@ -1,0 +1,36 @@
+title: MY BLOG
+description: >- # this means to ignore newlines until "baseurl:"
+  MY BLOG
+baseurl:  # the subpath of the site
+url:  # the base hostname & protocol for the site
+
+header:
+  pages:
+    - name: Open Time
+    - name: About us
+    - name: News
+    - name: Home
+      slug: /
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+collections: 
+  news: 
+    output: true

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Beautiful Angles(corals)
+---
+
+{% for coral in site.data.corals %} 
+
+     <p><strong>Name:</strong>  {{ coral.Name }}</p>
+     <p><strong>Brief Introduction:</strong>  {{ coral.Brief_Introduction }}</p>
+     <img src="../assets/img/corals/{{ coral.Name }}.png" width="450px" height="360px">
+     <br />
+     <br />
+     <br />
+     <br />
+    {% endfor %} 
+
+
+

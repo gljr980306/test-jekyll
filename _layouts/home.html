@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <!-- 引用head静态文件等-->
+  {% include head.html %}
+  
+    <style>
+    h1 {
+      color: white;
+      text-shadow: 5px 5px 10px #000000;
+      position: center;
+    }
+    h2 {
+       color: white;
+       padding-left: 5px;
+       background-color: #1ca5f5b6;
+       font-size: 15px;
+    }
+    h3 {
+       color: white;
+       padding-left: 5px;
+       background-color: #1ca5f5b6;
+       font-size: 14px;
+    }
+    h4 {
+       color: white;
+       padding-left: 70px;
+       background-color: #1ca5f5b6;
+       font-size: 15px;
+    }
+    </style>
+  
+  <body>
+     <!-- 引用导航条-->
+    {% include header.html %}
+   
+
+    <div class="page-content">
+      <h1>Ocean Eye</h1>
+      <div class="wrapper">
+        
+        <div class="dropdown">
+          <img src="../assets/img/PNG/Jingfly.png" alt="Ocean creatures" width="200" height="100">
+          <div class="dropdown-content">
+               <h2>  Ocean Creatures</h2>
+          <a href="http://localhost:4000/Beautiful_Angles">Beautiful Angles</a>
+          <a href="http://localhost:4000/Big_Fellas">Big Fellas</a>
+          <a href="http://localhost:4000/the_Cold-blood">the Cold-blood</a>
+          <a href="http://localhost:4000/Agile_Swimmers">Agile Swimmers</a>
+          <a href="http://localhost:4000/Tuck_and_Roll">Tuck and Roll</a>
+          
+        </div>
+    
+      </div>
+      <div class="dropdown">
+        <img src="../assets/img/PNG/Haitian.png" alt="exploring the ocean" width="200" height="100">
+        <div class="dropdown-content">
+            <h3>Exploring the Ocean</h3>
+        <a href="http://localhost:4000/mystery deep sea">Mystery Deep Sea</a>
+        <a href="http://localhost:4000/video hall">Video Hall</Video></a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <img src="../assets/img/PNG/Lou.png" alt="Events" width="200" height="100">
+        <div class="dropdown-content">
+          <h4>Events</h4>
+          <a href= "http://localhost:4000/Divefeedings" >Dive feedings</a>
+          <a href="http://localhost:4000/Meetthedolphins">Meet the dolphins</a>
+          <a href="http://localhost:4000/Divingwiththesharks">Diving with the sharks</a>
+          <a href="http://localhost:4000/OvernightattheOceanEye">Overnight at the Ocean Eye</a>
+      </div>
+
+      
+    </div>
+  
+
+    {% include footer.html %}
+  </body>
+</html>

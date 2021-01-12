@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <!-- 引用head静态文件等-->
+  {% include head.html %}
+
+  
+  <style>
+    body{
+      background-image: url(/assets/img/background2.jpg);
+    }
+    h1{
+      color: black;
+    }
+  </style>
+  
+  <body>
+    <!-- 引用导航条-->
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="work">
+              <!--传进模板的标题-->
+          <h1 class="page-heading">{{ page.title }}</h1>
+          <!--传进模板的内容-->
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+      <!--引用页脚-->
+    {% include footer.html %}
+
+  </body>
+</html>

@@ -1,0 +1,17 @@
+---
+layout: default
+title: Agile Swimmers (fishes)
+---
+
+{% for fish in site.data.fishes %} 
+     <p><strong>Name:</strong>  {{ fish.Name }}</p>
+     <p><strong>Scientific Name:</strong>  {{ fish.Scientific_Name }}</p>
+     <p><strong>Depth:</strong>  {{ fish.depth }}</p>
+     <p><strong>Description:</strong>  {{ fish.Description }}</p>
+     <p><strong>Lifespan:</strong>  {{ fish.Lifespan }}</p>
+     <img src="../assets/img/fish/{{ fish.Name }}.png">
+<br />
+<br />
+<br />
+<br />
+    {% endfor %} 
